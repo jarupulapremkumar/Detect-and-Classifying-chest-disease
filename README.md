@@ -25,8 +25,7 @@
     - The first CNN layers are used to extract high level general features. 
     - The last couple of layers are used to perform classification (on a specific task).
     - Local respective fields scan the image first searching for simple shapes such as edges/lines 
-    - These edges are then picked up by the subsequent layer to form more complex features.
-    - ![image](https://user-images.githubusercontent.com/46964929/180596265-36a2f38c-b14f-43b0-8f87-f80c6871a0bd.png)
+    - These edges are then picked up by the subsequent layer to form more complex features.![image](https://user-images.githubusercontent.com/46964929/180596265-36a2f38c-b14f-43b0-8f87-f80c6871a0bd.png)
     
   **ResNet (Transfer Learning):**
     - As CNNs grow deeper, vanishing gradient tend to occur which negatively impact network performance.
@@ -34,8 +33,8 @@
     - Residual Neural Network includes “skip connection” feature which enables training of 152 layers without vanishing gradient issues. 
     - Resnet works by adding “identity mappings” on top of the CNN. 
     - ImageNet contains 11 million images and 11,000 categories. 
-    - ImageNet is used to train ResNet deep network.
-    - ![image](https://user-images.githubusercontent.com/46964929/180596357-3c6551ed-f72c-433f-a1cb-cab3994a679d.png)
+    - ImageNet is used to train ResNet deep network.![image](https://user-images.githubusercontent.com/46964929/180596600-ce5dc654-1649-481f-bc53-c17cb826659c.png)
+
     
   **TRANSFER LEARNING TRAINING STRATEGIES:**
     - Strategy #1 Steps: 
@@ -43,10 +42,12 @@
       - Only train the newly added dense layers (with randomly initialized weights).
     - Strategy #2 Steps: 
       - Initialize the CNN network with the pre-trained weights 
-      - Retrain the entire CNN network while setting the learning rate to be very small, this is critical to ensure that you do not aggressively change the trained    weights.
+      - Retrain the entire CNN network while setting the learning rate to be very small, 
+      this is critical to ensure that you do not aggressively change the trained weights.
     - Transfer learning advantages are:
       - Provides fast training progress, you don’t have to start from scratch using randomly initialized weights
-      - You can use small training dataset to achieve incredible results
+      - You can use small training dataset to achieve incredible results![image](https://user-images.githubusercontent.com/46964929/180596357-3c6551ed-f72c-433f-a1cb-cab3994a679d.png)
+    
 
 
 
